@@ -1,0 +1,2 @@
+Assets/_TerrainAutoUpgrade/TerrainTexturesPackFree/TerrainTextures/*.png filter=lfs diff=lfs merge=lfs -text
+Assets/TerrainAutoUpgrade/TerrainTexturesPackFree/TerrainTextures/*.png filter=lfs diff=lfs merge=lfs -text

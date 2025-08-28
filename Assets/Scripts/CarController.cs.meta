@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 62b43bbb425b5074b9295ada7312fb4c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - wheelCollider_Front: {instanceID: 0}
+  - wheelCollider_BackLeft: {instanceID: 0}
+  - wheelCollider_BackRight: {instanceID: 0}
+  - wheel_Front: {instanceID: 0}
+  - wheel_Back_Left: {instanceID: 0}
+  - wheel_Back_Right: {instanceID: 0}
+  - centerOfMassObject: {instanceID: 0}
+  - cameraPosition: {instanceID: 0}
+  - Player: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

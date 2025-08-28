@@ -1,0 +1,13 @@
+{
+    "asset": "94798bd415ee1534180ff695e876e1f4",
+    "fileName": "0198b452-cc52-7376-8412-921da9709aef.wav",
+    "prompt": "a person steps on the asphalt 1 time",
+    "negativePrompt": "",
+    "model": "0ee39b33-2893-4e0f-8c46-0e0bdd4eda85",
+    "modelName": "Text to Sound",
+    "customSeed": -1,
+    "w3CTraceId": "3133d902ea28f5ff725b32e90eaf25bf",
+    "duration": 1.0,
+    "autoTrim": true,
+    "hasReference": false
+}

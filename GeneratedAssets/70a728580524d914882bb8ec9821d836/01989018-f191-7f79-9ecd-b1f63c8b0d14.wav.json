@@ -1,0 +1,13 @@
+{
+    "asset": "70a728580524d914882bb8ec9821d836",
+    "fileName": "01989018-f191-7f79-9ecd-b1f63c8b0d14.wav",
+    "prompt": "Generate a single, high-quality, realistic footstep sound of a human walking on asphalt. The sound should be clean, natural, and balanced, with a subtle texture (e.g., heel impact, light toe lift). Ensure it is loop-friendly—smooth attack and decay without abrupt cuts—so it can be seamlessly repeated in code. Deliver in stereo WAV format (44.1kHz, 16-bit). Avoid background noise or reverb (dry sound only)",
+    "negativePrompt": "",
+    "model": "0ee39b33-2893-4e0f-8c46-0e0bdd4eda85",
+    "modelName": "Text to Sound",
+    "customSeed": -1,
+    "w3CTraceId": "74eff8faa34945ab4e5b971df2ee29de",
+    "duration": 1.0,
+    "autoTrim": true,
+    "hasReference": false
+}

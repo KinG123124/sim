@@ -1,0 +1,13 @@
+{
+    "asset": "70a728580524d914882bb8ec9821d836",
+    "fileName": "0198900e-e35b-7d1b-92f3-75676daa57bd.wav",
+    "prompt": "Generate high-quality, realistic footsteps sounds of a human walking on asphalt. The sounds should be clear, rhythmic, and vary slightly in pitch and intensity to mimic natural movement. Include different step textures (e.g., heel-to-toe, light scuffs) for variety. The audio should be loop-friendly for game use (no abrupt cuts) and provided in stereo WAV format (44.1kHz, 16-bit). Optionally, add subtle environmental context (e.g., distant traffic, wind) but keep focus on the footsteps.",
+    "negativePrompt": "",
+    "model": "0ee39b33-2893-4e0f-8c46-0e0bdd4eda85",
+    "modelName": "Text to Sound",
+    "customSeed": -1,
+    "w3CTraceId": "da620c97e93d6554688fb36a96486c0b",
+    "duration": 1.0,
+    "autoTrim": true,
+    "hasReference": false
+}
