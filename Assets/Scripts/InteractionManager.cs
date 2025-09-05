@@ -12,6 +12,7 @@ public class InteractionManager : MonoBehaviour
     [SerializeField] private Sprite noInteractive;
     [SerializeField] private Sprite Interactive;
     [SerializeField] private TextMeshProUGUI InteractText;
+    [SerializeField] private GameObject playerObj;
 
     [System.Serializable]
     public class InteractionEvent : UnityEvent { }
@@ -50,7 +51,7 @@ public class InteractionManager : MonoBehaviour
 
     private void GetNpc()
     {
-        NPC.SetDestination(transform.position);
+        NPC.SetDestination(playerObj.transform.position);
     }
 
     public void UpdateInteractText(string newText = "")
