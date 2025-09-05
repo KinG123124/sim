@@ -386,11 +386,11 @@ MonoBehaviour:
     SteerWheel: 1
   - _WheelCollider: {fileID: 8613516281238934210}
     _WheelMesh: {fileID: 8655119151036546196}
-    DriveWheel: 1
+    DriveWheel: 0
     SteerWheel: 0
   - _WheelCollider: {fileID: 7375674533111900113}
     _WheelMesh: {fileID: 1776535257741273374}
-    DriveWheel: 1
+    DriveWheel: 0
     SteerWheel: 0
   centerOfMassObject: {fileID: 1518593192938086139}
   firstPersonController: {fileID: 0}
@@ -407,6 +407,8 @@ MonoBehaviour:
   - {fileID: 8941837417631964173}
   isPlayerInCar: 0
   rb: {fileID: 0}
+  HeadlightsKey: 104
+  EngineKey: 104
 --- !u!65 &5553672986638018731
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -1,4 +1,8 @@
+using System;
+using System.Runtime.InteropServices.WindowsRuntime;
+using TMPro;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
@@ -7,6 +11,7 @@ public class InteractionManager : MonoBehaviour
     [SerializeField] private Image image;
     [SerializeField] private Sprite noInteractive;
     [SerializeField] private Sprite Interactive;
+    [SerializeField] private TextMeshProUGUI InteractText;
 
     [System.Serializable]
     public class InteractionEvent : UnityEvent { }
@@ -23,8 +28,12 @@ public class InteractionManager : MonoBehaviour
     private Camera mainCamera; // Основная камера
     public CarController _controller;
 
+    public NavMeshAgent NPC;
+
     void Start()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+
         mainCamera = Camera.main;
         if (mainCamera == null)
         {
@@ -36,8 +45,23 @@ public class InteractionManager : MonoBehaviour
     {
         CheckInteraction();
         HandleInput();
+        if (Input.GetKeyDown(KeyCode.Z)) GetNpc();
     }
 
+    private void GetNpc()
+    {
+        NPC.SetDestination(transform.position);
+    }
+
+    public void UpdateInteractText(string newText = "")
+    {
+        if (newText != "")
+        {
+            InteractText.text = newText;
+            InteractText.gameObject.SetActive(true);
+        }
+        else InteractText.gameObject.SetActive(false);
+    }
     private void CheckInteraction()
     {
         if (mainCamera == null) return;
@@ -46,16 +70,40 @@ public class InteractionManager : MonoBehaviour
         RaycastHit hit;
 
         // Проверяем, попал ли луч на интерактивный объект
-        if (Physics.Raycast(ray, out hit, maxInteractionDistance, interactableLayer))
+        if (Physics.Raycast(ray, out hit, maxInteractionDistance))
         {
+            if (!hit.collider.gameObject.CompareTag("Interactable")) return;
+
             currentInteractable = hit.collider.gameObject;
             Debug.Log("Hovered over: " + currentInteractable.name);
             image.sprite = Interactive;
+            CarController carController = currentInteractable.GetComponent<CarController>();
+            if (carController != null)
+            {
+                if (_controller == null)
+                {
+                    UpdateInteractText("Сесть [F]");
+                    return;
+                }
+            }
+            Door door = currentInteractable.GetComponent<Door>();
+            if (door != null)
+            {
+                UpdateInteractText("Дверь [E]");
+                return;
+            }
+            LightSwitcher switcher = currentInteractable.GetComponent<LightSwitcher>();
+            if (switcher != null)
+            {
+                UpdateInteractText("Свет [E]");
+                return;
+            }
         }
-        else
+        else // Луч не попал на интерактивный объект
         {
             image.sprite = noInteractive;
             currentInteractable = null;
+            UpdateInteractText();
         }
     }
 
@@ -65,7 +113,15 @@ public class InteractionManager : MonoBehaviour
         {
             Door door = currentInteractable.GetComponent<Door>();
             if (door != null)
+            {
                 door.ToggleDoor();
+                return;
+            }
+            LightSwitcher switcher = currentInteractable.GetComponent<LightSwitcher>();
+            if (switcher != null)
+            {
+                switcher.SwitchMode();
+            }
         }
         if (Input.GetKeyDown(KeyCode.F))
         {

@@ -1293,6 +1293,7 @@ GameObject:
   - component: {fileID: 4969265732974967675}
   - component: {fileID: 7622435197282102881}
   - component: {fileID: 5109439535144922666}
+  - component: {fileID: 2851846455333099651}
   m_Layer: 6
   m_Name: Niva
   m_TagString: Untagged
@@ -1368,6 +1369,8 @@ MonoBehaviour:
   - {fileID: 1690250318110077350}
   isPlayerInCar: 0
   rb: {fileID: 0}
+  HeadlightsKey: 104
+  EngineKey: 104
 --- !u!54 &7622435197282102881
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1414,8 +1417,29 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.8573227, y: 0.8827461, z: 3.8561401}
-  m_Center: {x: 0.009037015, y: 0.05862678, z: -0.04629518}
+  m_Size: {x: 1.538045, y: 0.15067129, z: 1.786901}
+  m_Center: {x: 0.018485049, y: 0.902033, z: 0.55}
+--- !u!65 &2851846455333099651
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5671204541298581353}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.8115816, y: 0.73914677, z: 3.7383475}
+  m_Center: {x: -0.013833414, y: -0.013172801, z: 0.012601183}
 --- !u!1 &5773196830735258389
 GameObject:
   m_ObjectHideFlags: 0

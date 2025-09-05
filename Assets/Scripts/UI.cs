@@ -36,8 +36,8 @@ public class UI : MonoBehaviour
         }
         else CarGUI.SetActive(false);
 
-        speed = ((float)Math.Round(speed, 2)) * 2;
-        speedometer.text = speed + "km/h";
+        speed = Mathf.Round(speed * 2) ;
+        speedometer.text = speed + "";
         var rot = strelkaTakhometer.rectTransform.localRotation.eulerAngles;
         rot.z = Takhometer.Evaluate(speed);
         strelkaTakhometer.rectTransform.localRotation = Quaternion.Euler(rot);

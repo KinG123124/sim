@@ -195,6 +195,8 @@ MonoBehaviour:
   _Lights: []
   isPlayerInCar: 0
   rb: {fileID: 0}
+  HeadlightsKey: 104
+  EngineKey: 104
 --- !u!1 &838555299875098887
 GameObject:
   m_ObjectHideFlags: 0

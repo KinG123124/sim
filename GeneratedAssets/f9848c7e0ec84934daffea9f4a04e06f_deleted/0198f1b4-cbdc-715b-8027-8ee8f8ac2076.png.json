@@ -1,0 +1,20 @@
+{
+    "asset": "f9848c7e0ec84934daffea9f4a04e06f",
+    "fileName": "0198f1b4-cbdc-715b-8027-8ee8f8ac2076.png",
+    "prompt": "текстура асфальта бесшовная",
+    "negativePrompt": "",
+    "model": "e019af84-3249-4fe3-81bc-a1ba0323fdce",
+    "modelName": "GPT Image 1 - High",
+    "customSeed": -1,
+    "w3CTraceId": "6368817678de1b786f122cbb675b2139",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}

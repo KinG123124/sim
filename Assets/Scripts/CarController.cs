@@ -31,6 +31,11 @@ public class CarController : MonoBehaviour
     private float hInput;
     public Rigidbody rb;
 
+    [Header("Бинды")]
+    public KeyCode HeadlightsKey = KeyCode.H;
+    public KeyCode EngineKey = KeyCode.B; 
+
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -59,7 +64,7 @@ public class CarController : MonoBehaviour
 
     private void Update()
     {
-        if (isPlayerInCar && Input.GetKeyDown(KeyCode.L))
+        if (isPlayerInCar && Input.GetKeyDown(HeadlightsKey))
             changeLightMode();
     }
 

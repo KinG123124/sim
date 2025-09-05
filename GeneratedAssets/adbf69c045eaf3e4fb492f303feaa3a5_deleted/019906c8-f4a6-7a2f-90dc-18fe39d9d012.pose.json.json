@@ -1,0 +1,11 @@
+{
+    "asset": "4221cc63d5e9f3141b68285c09ce9d32",
+    "fileName": "019906c8-f4a6-7a2f-90dc-18fe39d9d012.pose.json",
+    "prompt": "шаг",
+    "negativePrompt": "",
+    "model": "a9c27ca4-3ec9-43e8-96cd-ee891aba64c5",
+    "modelName": "Text to Motion",
+    "customSeed": 1828980901,
+    "w3CTraceId": "083c4083b4de3371fac8e12110587008",
+    "isTrimmed": false
+}

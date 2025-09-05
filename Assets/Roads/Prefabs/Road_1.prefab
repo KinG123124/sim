@@ -180,6 +180,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6445537640210706534}
     m_Modifications:
+    - target: {fileID: 1338971328392869682, guid: 3133e5149236b8d4cbc502ebd3a2b25f, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: c38153f8842c59746a56dce36fe8301b, type: 2}
     - target: {fileID: 3525753597326045650, guid: 3133e5149236b8d4cbc502ebd3a2b25f, type: 3}
       propertyPath: m_Name
       value: Road_1
